@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Preahvihear&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-white/10;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-midnight text-white;
+    background-image:
+      radial-gradient(circle at 15% 10%, rgba(163, 98, 255, 0.18), transparent 18%),
+      radial-gradient(circle at 85% 22%, rgba(124, 231, 255, 0.1), transparent 16%),
+      radial-gradient(circle at 50% 48%, rgba(163, 98, 255, 0.08), transparent 20%),
+      linear-gradient(180deg, #0b0218 0%, #080113 100%);
+  }
+
+  ::selection {
+    @apply bg-lavender/40 text-white;
+  }
+}
+
+@layer components {
+  .section-kicker {
+    @apply text-sm uppercase tracking-[0.4em] text-lavender-soft;
+  }
+
+  .section-title {
+    @apply mt-4 font-display text-3xl leading-[1.08] text-white sm:text-4xl lg:text-5xl;
+  }
+
+  .surface-panel {
+    @apply rounded-[2rem] border border-white/10 bg-section-panel shadow-panel backdrop-blur-xl;
+  }
+
+  .grid-noise {
+    background-image:
+      linear-gradient(rgba(255,255,255,0.04) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px);
+    background-size: 36px 36px;
+  }
+}

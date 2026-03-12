@@ -1,0 +1,19 @@
+<svg width="1200" height="760" viewBox="0 0 1200 760" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="760" rx="40" fill="#19092A"/>
+  <rect x="76" y="76" width="1048" height="608" rx="28" fill="#120427"/>
+  <rect x="120" y="126" width="960" height="90" rx="20" fill="#251045"/>
+  <rect x="120" y="252" width="438" height="376" rx="24" fill="#1E0C33"/>
+  <rect x="596" y="252" width="484" height="176" rx="24" fill="#2D1550"/>
+  <rect x="596" y="452" width="228" height="176" rx="24" fill="#251045"/>
+  <rect x="852" y="452" width="228" height="176" rx="24" fill="#251045"/>
+  <path d="M158 171H602" stroke="#A362FF" stroke-width="16" stroke-linecap="round"/>
+  <path d="M643 171H1036" stroke="#7B4FD1" stroke-width="16" stroke-linecap="round"/>
+  <circle cx="339" cy="438" r="112" fill="#A362FF" fill-opacity="0.15"/>
+  <path d="M254 439L319 500L430 370" stroke="#A362FF" stroke-width="26" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="124" y="184" fill="white" font-family="Arial, sans-serif" font-size="32" font-weight="700">The Sunnah Store</text>
+  <text x="596" y="316" fill="white" font-family="Arial, sans-serif" font-size="50" font-weight="700">SEO + CRM Optimization</text>
+  <text x="596" y="522" fill="#D9D2E6" font-family="Arial, sans-serif" font-size="28">Retention flows</text>
+  <text x="596" y="566" fill="#D9D2E6" font-family="Arial, sans-serif" font-size="28">Search visibility</text>
+  <text x="852" y="522" fill="#D9D2E6" font-family="Arial, sans-serif" font-size="28">Reporting</text>
+  <text x="852" y="566" fill="#D9D2E6" font-family="Arial, sans-serif" font-size="28">Store performance</text>
+</svg>

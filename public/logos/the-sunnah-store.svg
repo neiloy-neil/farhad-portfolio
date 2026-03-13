@@ -1,0 +1,12 @@
+<svg width="160" height="160" viewBox="0 0 160 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="160" height="160" rx="36" fill="url(#paint0_linear)"/>
+  <path d="M80 34L112 54V92C112 109.673 97.6731 124 80 124C62.3269 124 48 109.673 48 92V54L80 34Z" fill="#EAF7F1"/>
+  <path d="M80 52L96 62V92C96 100.837 88.8366 108 80 108C71.1634 108 64 100.837 64 92V62L80 52Z" fill="#1E5A47"/>
+  <text x="27" y="142" fill="#EAF7F1" font-family="Arial, sans-serif" font-size="18" letter-spacing="2">TSS</text>
+  <defs>
+    <linearGradient id="paint0_linear" x1="12" y1="14" x2="142" y2="150" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2F846B"/>
+      <stop offset="1" stop-color="#103D31"/>
+    </linearGradient>
+  </defs>
+</svg>

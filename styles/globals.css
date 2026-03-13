@@ -1,12 +1,46 @@
-@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Preahvihear&display=swap");
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --bg: #f4f7fb;
+  --bg-rgb: 244 247 251;
+  --foreground: #0d1726;
+  --foreground-rgb: 13 23 38;
+  --primary-rgb: 50 115 255;
+  --primary-foreground-rgb: 245 248 255;
+  --secondary-rgb: 232 239 249;
+  --secondary-foreground-rgb: 27 46 72;
+  --accent-rgb: 255 128 74;
+  --accent-foreground-rgb: 255 248 243;
+  --muted-rgb: 223 231 242;
+  --muted-foreground-rgb: 79 95 117;
+  --card-rgb: 255 255 255;
+  --border-rgb: 255 255 255;
+  --ring-rgb: 86 149 255;
+}
+
+.dark {
+  --bg: #09111f;
+  --bg-rgb: 9 17 31;
+  --foreground: #eff5ff;
+  --foreground-rgb: 239 245 255;
+  --primary-rgb: 107 179 255;
+  --primary-foreground-rgb: 6 16 31;
+  --secondary-rgb: 18 28 48;
+  --secondary-foreground-rgb: 221 233 251;
+  --accent-rgb: 255 149 103;
+  --accent-foreground-rgb: 29 13 6;
+  --muted-rgb: 18 29 47;
+  --muted-foreground-rgb: 146 168 201;
+  --card-rgb: 14 24 41;
+  --border-rgb: 255 255 255;
+  --ring-rgb: 107 179 255;
+}
+
 @layer base {
   * {
-    @apply border-white/10;
+    @apply border-border;
   }
 
   html {
@@ -14,36 +48,29 @@
   }
 
   body {
-    @apply bg-midnight text-white;
-    background-image:
-      radial-gradient(circle at 15% 10%, rgba(163, 98, 255, 0.18), transparent 18%),
-      radial-gradient(circle at 85% 22%, rgba(124, 231, 255, 0.1), transparent 16%),
-      radial-gradient(circle at 50% 48%, rgba(163, 98, 255, 0.08), transparent 20%),
-      linear-gradient(180deg, #0b0218 0%, #080113 100%);
+    background:
+      radial-gradient(circle at top left, rgba(85, 165, 255, 0.12), transparent 22%),
+      radial-gradient(circle at 80% 10%, rgba(255, 145, 100, 0.1), transparent 18%),
+      radial-gradient(circle at bottom, rgba(255, 255, 255, 0.06), transparent 30%),
+      var(--bg);
+    color: var(--foreground);
+  }
+
+  a,
+  button,
+  input,
+  textarea {
+    @apply transition-colors duration-300;
   }
 
   ::selection {
-    @apply bg-lavender/40 text-white;
+    background: rgba(107, 179, 255, 0.28);
+    color: inherit;
   }
 }
 
 @layer components {
-  .section-kicker {
-    @apply text-sm uppercase tracking-[0.4em] text-lavender-soft;
-  }
-
-  .section-title {
-    @apply mt-4 font-display text-3xl leading-[1.08] text-white sm:text-4xl lg:text-5xl;
-  }
-
-  .surface-panel {
-    @apply rounded-[2rem] border border-white/10 bg-section-panel shadow-panel backdrop-blur-xl;
-  }
-
-  .grid-noise {
-    background-image:
-      linear-gradient(rgba(255,255,255,0.04) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px);
-    background-size: 36px 36px;
+  .glass-panel {
+    @apply border border-white/15 bg-white/10 shadow-floating shadow-black/10 backdrop-blur-2xl;
   }
 }

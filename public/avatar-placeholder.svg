@@ -1,0 +1,24 @@
+<svg width="720" height="900" viewBox="0 0 720 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="720" height="900" rx="48" fill="url(#bg)"/>
+  <circle cx="363" cy="212" r="165" fill="url(#halo)" opacity="0.8"/>
+  <circle cx="360" cy="273" r="118" fill="#F4F7FB" fill-opacity="0.95"/>
+  <path d="M196 772C196 647.46 267.46 576 392 576H328C452.54 576 524 647.46 524 772V820H196V772Z" fill="#E3ECF8" fill-opacity="0.95"/>
+  <path d="M284 340C284 298.026 318.026 264 360 264C401.974 264 436 298.026 436 340V407C436 448.974 401.974 483 360 483C318.026 483 284 448.974 284 407V340Z" fill="#C6D8EE"/>
+  <path d="M275 514C275 490.252 294.252 471 318 471H402C425.748 471 445 490.252 445 514V564H275V514Z" fill="#A5C2E7"/>
+  <circle cx="534" cy="190" r="56" fill="#FFB28B" fill-opacity="0.85"/>
+  <circle cx="184" cy="627" r="34" fill="#6BB3FF" fill-opacity="0.8"/>
+  <circle cx="568" cy="694" r="22" fill="#FFFFFF" fill-opacity="0.72"/>
+  <rect x="111" y="94" width="204" height="54" rx="27" fill="white" fill-opacity="0.16" stroke="white" stroke-opacity="0.24"/>
+  <text x="145" y="128" fill="white" fill-opacity="0.82" font-family="Arial, sans-serif" font-size="24" letter-spacing="4">PROFILE</text>
+  <defs>
+    <linearGradient id="bg" x1="100" y1="70" x2="620" y2="830" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#142238"/>
+      <stop offset="0.5" stop-color="#10294A"/>
+      <stop offset="1" stop-color="#0A1325"/>
+    </linearGradient>
+    <radialGradient id="halo" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(363 212) rotate(90) scale(165)">
+      <stop stop-color="#6BB3FF"/>
+      <stop offset="1" stop-color="#6BB3FF" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+</svg>

@@ -1,0 +1,12 @@
+<svg width="160" height="160" viewBox="0 0 160 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="160" height="160" rx="36" fill="url(#paint0_linear)"/>
+  <path d="M38 96C58 68 75 54 92 54C104 54 113 60 122 72C110 71 102 72 93 79C84 86 75 99 62 116L38 96Z" fill="#F4F2FF"/>
+  <path d="M47 120C72 85 90 70 112 66C117 65 123 65 130 67C110 76 95 91 75 126L47 120Z" fill="#D7D1FF"/>
+  <text x="20" y="142" fill="#F3F0FF" font-family="Arial, sans-serif" font-size="16" letter-spacing="1.2">INNOVATE</text>
+  <defs>
+    <linearGradient id="paint0_linear" x1="18" y1="18" x2="142" y2="144" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7C62FF"/>
+      <stop offset="1" stop-color="#231A5D"/>
+    </linearGradient>
+  </defs>
+</svg>

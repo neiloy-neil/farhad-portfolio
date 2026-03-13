@@ -1,18 +1,22 @@
+import Link from "next/link";
+
 export default function NotFound() {
   return (
-    <main className="flex min-h-screen items-center justify-center bg-midnight px-6 text-center text-white">
-      <div className="surface-panel max-w-xl p-10">
-        <p className="section-kicker">404</p>
-        <h1 className="section-title">This page could not be found.</h1>
-        <p className="mt-4 text-white/70">
-          The link may be broken, or the page may have been moved.
+    <main className="flex min-h-screen items-center justify-center bg-[var(--bg)] px-6 text-[var(--foreground)]">
+      <div className="glass-panel max-w-xl rounded-[2rem] p-10 text-center">
+        <p className="text-sm uppercase tracking-[0.4em] text-[var(--muted-foreground)]">
+          404
         </p>
-        <a
+        <h1 className="mt-4 font-display text-5xl">Page not found</h1>
+        <p className="mt-4 text-[var(--muted-foreground)]">
+          The page you requested is not available in this portfolio.
+        </p>
+        <Link
           href="/"
-          className="mt-8 inline-flex rounded-full bg-[linear-gradient(90deg,#a362ff,#7b4fd1)] px-6 py-3 text-sm font-semibold text-white shadow-neon transition hover:-translate-y-0.5"
+          className="mt-8 inline-flex rounded-full border border-white/15 px-5 py-3 text-sm transition hover:border-white/30 hover:bg-white/10"
         >
-          Back to Home
-        </a>
+          Return home
+        </Link>
       </div>
     </main>
   );

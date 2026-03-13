@@ -1,0 +1,13 @@
+<svg width="160" height="160" viewBox="0 0 160 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="160" height="160" rx="36" fill="url(#paint0_linear)"/>
+  <path d="M42 48H76C96.9868 48 114 65.0132 114 86C114 106.987 96.9868 124 76 124H42V48Z" fill="#FFF3EB"/>
+  <path d="M80 58H118V72H94V84H114V98H94V114H80V58Z" fill="#FFE0CF"/>
+  <circle cx="122" cy="44" r="10" fill="#FFD29F"/>
+  <text x="18" y="142" fill="#FFF3EB" font-family="Arial, sans-serif" font-size="14" letter-spacing="1">DIGITAL DUDE</text>
+  <defs>
+    <linearGradient id="paint0_linear" x1="18" y1="18" x2="142" y2="144" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FF8E57"/>
+      <stop offset="1" stop-color="#4A1D10"/>
+    </linearGradient>
+  </defs>
+</svg>

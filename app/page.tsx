@@ -148,7 +148,7 @@ export default function Page() {
                 </motion.div>
               </div>
 
-              <div className="relative min-h-[25rem] lg:min-h-[38rem]">
+              <div className="relative min-h-[13rem] sm:min-h-[17rem] lg:min-h-[38rem]">
                 <motion.div initial={{ opacity: 0, scale: 0.92 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.85, delay: 0.12 }} className="absolute right-0 top-4 hidden w-44 rounded-[1.5rem] border border-white/10 bg-white/8 p-4 backdrop-blur-2xl lg:block">
                   <div className="flex items-start gap-3"><BadgeCheck className="mt-1 h-5 w-5 text-[#8cc4ff]" /><div><p className="text-sm font-medium text-white">SEO + Growth Systems</p><p className="mt-2 text-sm leading-7 text-slate-400">Search, CRM, and execution aligned around measurable business outcomes.</p></div></div>
                 </motion.div>
@@ -295,7 +295,3 @@ export default function Page() {
     </main>
   );
 }
-
-
-
-

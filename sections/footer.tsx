@@ -53,10 +53,21 @@ export function Footer() {
 
           <div className="relative mt-8 flex flex-col gap-3 border-t border-white/8 pt-5 text-xs uppercase tracking-[0.24em] text-[var(--muted-foreground)] sm:flex-row sm:items-center sm:justify-between">
             <p>© 2026 {profile.name}. All rights reserved.</p>
-            <p>Built with Next.js, Framer Motion, and Three.js</p>
+            <p>
+              Powered by{" "}
+              <a
+                href="https://thedigitaldude.com"
+                target="_blank"
+                rel="noreferrer"
+                className="text-white transition hover:text-[#8cc4ff]"
+              >
+                The Digital Dude
+              </a>
+            </p>
           </div>
         </div>
       </Container>
     </footer>
   );
 }
+

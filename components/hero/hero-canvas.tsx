@@ -90,7 +90,7 @@ function ParticleSphere({ particleCount }: { particleCount: number }) {
       {keywords.map((keyword, index) => (
         <Html key={keyword.label} position={keyword.position} center distanceFactor={8.5} transform>
           <div
-            className="rounded-full border border-white/15 bg-[rgba(8,16,30,0.72)] px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.28em] text-white shadow-[0_0_24px_rgba(107,179,255,0.14)] backdrop-blur-md"
+            className="rounded-full border border-white/15 bg-[rgba(8,16,30,0.72)] px-2 py-0.5 text-[8px] font-semibold uppercase tracking-[0.18em] text-white shadow-[0_0_24px_rgba(107,179,255,0.14)] backdrop-blur-md sm:px-3 sm:py-1 sm:text-[10px] sm:tracking-[0.28em]"
             style={{ animationDelay: `${index * 0.2}s` }}
           >
             {keyword.label}

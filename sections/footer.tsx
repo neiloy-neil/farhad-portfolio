@@ -56,7 +56,7 @@ export function Footer() {
             <p>
               Powered by{" "}
               <a
-                href="https://thedigitaldude.com"
+                href="https://digitaldude.co.uk"
                 target="_blank"
                 rel="noreferrer"
                 className="text-white transition hover:text-[#8cc4ff]"
@@ -70,4 +70,3 @@ export function Footer() {
     </footer>
   );
 }
-

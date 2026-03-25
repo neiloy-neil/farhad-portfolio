@@ -26,7 +26,15 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { FloatingCard } from "@/components/ui/floating-card";
 import { caseStudies as caseStudyPages } from "@/data/case-studies";
-import { highlightedSkills, metrics, profile, skillCategories } from "@/data/site";
+import {
+  aboutExperience,
+  aboutHighlights,
+  experienceTimeline,
+  highlightedSkills,
+  metrics,
+  profile,
+  skillCategories
+} from "@/data/site";
 
 const ContactPanel = dynamic(
   () => import("@/components/ui/contact-panel").then((mod) => mod.ContactPanel),
@@ -34,67 +42,6 @@ const ContactPanel = dynamic(
     loading: () => <div className="h-[34rem] rounded-[2rem] border border-white/10 bg-white/6" />
   }
 );
-
-const aboutHighlights = [
-  { label: "Role", value: "CEO & Co-Founder", detail: "Founder-led digital execution through The Digital Dude." },
-  { label: "Core focus", value: "SEO + eCommerce + CRM", detail: "Growth strategy supported by website and systems thinking." },
-  { label: "Reach", value: "Local + international", detail: "Supporting businesses across markets with scalable digital solutions." }
-];
-
-const aboutExperience = [
-  "CEO & Co-Founder - The Digital Dude",
-  "Social Media & Website Manager - Bindu",
-  "Customer Relationship Senior Executive - The Sunnah Store"
-];
-
-const experienceTimeline = [
-  {
-    company: "The Digital Dude",
-    role: "CEO & Co-Founder",
-    duration: "Jul 2020 - Present",
-    description:
-      "Leading a digital solutions agency delivering web development, SaaS, ERP, CRM, and HRM systems alongside growth-focused digital strategy for businesses locally and internationally.",
-    logo: "/images/companies/the-digital-dude.svg",
-    glow: "shadow-[0_0_42px_rgba(255,149,103,0.42)]",
-    featured: true
-  },
-  {
-    company: "Bindu",
-    role: "Social Media & Website Manager",
-    duration: "Feb 2025 - Present",
-    description:
-      "Managing Bindu Premium's website and social media presence, implementing SEO improvements, developing content strategies, and analyzing marketing performance to drive brand visibility and growth.",
-    logo: "/images/companies/bindu.svg",
-    glow: "shadow-[0_0_30px_rgba(255,140,91,0.35)]"
-  },
-  {
-    company: "STYLETECK INNOVATIONS LTD",
-    role: "Web & Digital Marketing Executive",
-    duration: "Aug 2024 - Sep 2024",
-    description:
-      "Developed digital marketing strategies, managed website updates and SEO improvements, ran social media campaigns, and analyzed marketing performance data.",
-    logo: "/images/companies/styleteck-innovations.svg",
-    glow: "shadow-[0_0_30px_rgba(76,211,255,0.35)]"
-  },
-  {
-    company: "The Sunnah Store",
-    role: "Customer Relationship Executive to Senior Executive",
-    duration: "Dec 2023 - Jul 2024",
-    description:
-      "Managed CRM systems, improved SEO and marketing strategies, and helped enhance customer satisfaction and engagement.",
-    logo: "/images/companies/the-sunnah-store.svg",
-    glow: "shadow-[0_0_30px_rgba(47,132,107,0.35)]"
-  },
-  {
-    company: "Innovate Wave",
-    role: "Marketing Lead",
-    duration: "May 2023 - Dec 2023",
-    description:
-      "Led marketing strategies for client growth including SEO, social media marketing, and digital campaigns.",
-    logo: "/images/companies/innovate-wave.svg",
-    glow: "shadow-[0_0_30px_rgba(124,98,255,0.32)]"
-  }
-];
 
 const categoryIcons = {
   SEO: Search,

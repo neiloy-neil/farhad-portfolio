@@ -6,6 +6,8 @@ import { Card } from "@/components/ui/card";
 import { Container } from "@/components/ui/container";
 import { caseStudies, getCaseStudy } from "@/data/case-studies";
 
+export const dynamicParams = false;
+
 export function generateStaticParams() {
   return caseStudies.map((study) => ({ slug: study.slug }));
 }

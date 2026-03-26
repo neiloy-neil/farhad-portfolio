@@ -9,6 +9,8 @@ import {
   BadgeCheck,
   BarChart3,
   Code2,
+  ExternalLink,
+  FolderKanban,
   Mail,
   Megaphone,
   Search,
@@ -26,6 +28,7 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { FloatingCard } from "@/components/ui/floating-card";
 import { caseStudies as caseStudyPages } from "@/data/case-studies";
+import { demoProjects } from "@/data/demo-projects";
 import {
   aboutExperience,
   aboutHighlights,
@@ -182,6 +185,86 @@ export default function Page() {
                   <div className="mt-6 inline-flex items-center gap-2 text-sm text-white">Open case study<ArrowRight className="h-4 w-4 transition group-hover:translate-x-1" /></div>
                 </Card>
               </Link>
+            </motion.div>
+          ))}
+        </div>
+      </SectionWrapper>
+
+      <SectionWrapper
+        id="demo-lab"
+        eyebrow="Demo Lab"
+        title="A growing library of landing page demos across SaaS, eCommerce, AI, real estate, fintech, and portfolio niches."
+        description="These are prompt-driven concept builds used to demonstrate UI range, conversion thinking, motion, and fast execution across multiple verticals. They are intentionally separated from the real client case studies above."
+      >
+        <div className="mb-8 grid gap-4 lg:grid-cols-[0.72fr_0.28fr]">
+          <Card className="p-6 sm:p-7">
+            <div className="flex flex-col gap-5 sm:flex-row sm:items-end sm:justify-between">
+              <div className="max-w-2xl">
+                <div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/6 px-4 py-2 text-xs uppercase tracking-[0.26em] text-[var(--muted-foreground)]">
+                  <FolderKanban className="h-3.5 w-3.5" />
+                  Portfolio demos
+                </div>
+                <p className="mt-4 text-lg leading-8 text-white/82">
+                  These entries show design range and build speed: dark SaaS systems, vibrant product pages, premium portfolios, lead-gen funnels, fintech surfaces, cyber-sec concepts, and real-estate presentation work.
+                </p>
+              </div>
+              <div className="grid gap-3 sm:min-w-[12rem]">
+                <div className="rounded-[1.25rem] border border-white/10 bg-white/6 px-4 py-4">
+                  <p className="text-xs uppercase tracking-[0.24em] text-[var(--muted-foreground)]">Demo builds</p>
+                  <p className="mt-2 text-3xl font-semibold tracking-[-0.05em] text-white">{demoProjects.length}</p>
+                </div>
+              </div>
+            </div>
+          </Card>
+          <Card className="p-6 sm:p-7">
+            <p className="text-xs uppercase tracking-[0.24em] text-[var(--muted-foreground)]">Coverage</p>
+            <p className="mt-4 text-2xl font-semibold tracking-[-0.05em] text-white">SaaS, AI, lead-gen, DTC, fitness, fintech, Web3, cyber-sec, and real estate.</p>
+          </Card>
+        </div>
+
+        <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-3">
+          {demoProjects.map((project, index) => (
+            <motion.div
+              key={project.slug}
+              initial={{ opacity: 0, y: 24 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.15 }}
+              transition={{ duration: 0.45, delay: index * 0.04 }}
+            >
+              <Card className="group relative h-full overflow-hidden rounded-[1.8rem] p-0 transition duration-300 hover:-translate-y-1 hover:border-white/20 hover:bg-white/10">
+                <div className={`absolute inset-x-0 top-0 h-36 bg-gradient-to-br ${project.gradient} opacity-90`} />
+                <div className="absolute inset-x-6 top-6 h-24 rounded-[1.3rem] border border-white/10 bg-[linear-gradient(180deg,rgba(5,11,20,0.86),rgba(8,16,30,0.58))] backdrop-blur-2xl">
+                  <div className="flex h-full items-end justify-between gap-3 px-4 pb-4">
+                    <div>
+                      <p className="text-[11px] uppercase tracking-[0.28em] text-white/52">{project.niche}</p>
+                      <p className="mt-2 text-base font-medium tracking-[-0.03em] text-white">{project.title}</p>
+                    </div>
+                    <div className="grid gap-1">
+                      <div className="h-2.5 w-14 rounded-full bg-white/18" />
+                      <div className="h-2.5 w-10 rounded-full bg-white/10" />
+                    </div>
+                  </div>
+                </div>
+                <div className="relative pt-36">
+                  <div className="p-6">
+                    <p className="text-xs uppercase tracking-[0.28em] text-[var(--muted-foreground)]">{project.stack}</p>
+                    <p className="mt-4 text-xl font-semibold tracking-[-0.04em] text-white">{project.title}</p>
+                    <p className="mt-4 text-sm leading-7 text-[var(--muted-foreground)]">{project.summary}</p>
+                    <div className="mt-6 flex items-center justify-between gap-4 border-t border-white/8 pt-5">
+                      <span className="text-sm text-white/84">View source repo</span>
+                      <a
+                        href={project.repo}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="inline-flex items-center gap-2 rounded-full border border-white/12 bg-white/6 px-4 py-2 text-sm font-medium text-white transition hover:border-white/20 hover:bg-white/10"
+                      >
+                        Open
+                        <ExternalLink className="h-4 w-4 transition group-hover:translate-x-0.5" />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </Card>
             </motion.div>
           ))}
         </div>

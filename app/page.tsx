@@ -250,17 +250,28 @@ export default function Page() {
                     <p className="text-xs uppercase tracking-[0.28em] text-[var(--muted-foreground)]">{project.stack}</p>
                     <p className="mt-4 text-xl font-semibold tracking-[-0.04em] text-white">{project.title}</p>
                     <p className="mt-4 text-sm leading-7 text-[var(--muted-foreground)]">{project.summary}</p>
-                    <div className="mt-6 flex items-center justify-between gap-4 border-t border-white/8 pt-5">
-                      <span className="text-sm text-white/84">View source repo</span>
-                      <a
-                        href={project.repo}
-                        target="_blank"
-                        rel="noreferrer"
-                        className="inline-flex items-center gap-2 rounded-full border border-white/12 bg-white/6 px-4 py-2 text-sm font-medium text-white transition hover:border-white/20 hover:bg-white/10"
-                      >
-                        Open
-                        <ExternalLink className="h-4 w-4 transition group-hover:translate-x-0.5" />
-                      </a>
+                    <div className="mt-6 flex flex-wrap items-center justify-between gap-4 border-t border-white/8 pt-5">
+                      <span className="text-sm text-white/84">Live preview and source</span>
+                      <div className="flex flex-wrap gap-3">
+                        <a
+                          href={project.live}
+                          target="_blank"
+                          rel="noreferrer"
+                          className="inline-flex items-center gap-2 rounded-full bg-white px-4 py-2 text-sm font-medium text-slate-950 transition hover:bg-white/90"
+                        >
+                          Live
+                          <ExternalLink className="h-4 w-4" />
+                        </a>
+                        <a
+                          href={project.repo}
+                          target="_blank"
+                          rel="noreferrer"
+                          className="inline-flex items-center gap-2 rounded-full border border-white/12 bg-white/6 px-4 py-2 text-sm font-medium text-white transition hover:border-white/20 hover:bg-white/10"
+                        >
+                          Source
+                          <ExternalLink className="h-4 w-4 transition group-hover:translate-x-0.5" />
+                        </a>
+                      </div>
                     </div>
                   </div>
                 </div>

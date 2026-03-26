@@ -127,7 +127,7 @@ export const demoProjects: DemoProject[] = [
     stack: "React + Tailwind CSS",
     summary: "A soft-glass fintech concept with currency conversion mockups, live transaction movement, and depth-heavy card design.",
     repo: "https://github.com/neiloy-neil/lumina-finance",
-    live: "https://lumina-finance-farhads-projects-f88ffd00.vercel.app",
+    live: "https://lumina-finance-black.vercel.app",
     gradient: "from-rose-400/24 via-indigo-400/16 to-sky-400/20"
   },
   {
